@@ -695,59 +695,67 @@
         <!-- Форма заявки -->
         <form class="order-form">
           <!-- Name -->
-          <label class="input-label" for="username">Name</label>
-          <div class="input-wrapper">
-            <svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-name"></use>
-            </svg>
-            <input
-              id="username"
-              class="input-field"
-              type="text"
-              name="username"
-              required
-            />
+          <div class="input-group">
+            <label class="input-label" for="user-name">Name</label>
+            <div class="input-wrapper">
+              <input
+                id="user-name"
+                class="input-field"
+                type="text"
+                name="user-name"
+                required
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
 
           <!-- Phone -->
-          <label class="input-label" for="contact-tel">Phone</label>
-          <div class="input-wrapper">
-            <svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-tel"></use>
-            </svg>
-            <input
-              id="contact-tel"
-              class="input-field"
-              type="tel"
-              name="contact_tel"
-              required
-            />
+          <div class="input-group">
+            <label class="input-label" for="contact-tel">Phone</label>
+            <div class="input-wrapper">
+              <input
+                id="contact-tel"
+                class="input-field"
+                type="tel"
+                name="contact-tel"
+                required
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
           </div>
 
           <!-- Email -->
-          <label class="input-label" for="email">Email</label>
-          <div class="input-wrapper">
-            <svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-            <input
-              id="email"
-              class="input-field"
-              type="email"
-              name="email"
-              required
-            />
+          <div class="input-group">
+            <label class="input-label" for="email">Email</label>
+            <div class="input-wrapper">
+              <input
+                id="email"
+                class="input-field"
+                type="email"
+                name="email"
+                required
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
           <!-- Comment -->
-          <label class="input-label" for="comment">Comment</label>
-          <textarea
-            id="comment"
-            class="form-input"
-            name="comment"
-            placeholder="Text input"
-            rows="5"
-          ></textarea>
+          <div class="input-group">
+            <label class="input-label" for="comment">Comment</label>
+            <textarea
+              id="comment"
+              class="form-input"
+              name="comment"
+              placeholder="Text input"
+              rows="5"
+            ></textarea>
+          </div>
 
           <!-- Checkbox -->
           <div class="checkbox-wrapper">
