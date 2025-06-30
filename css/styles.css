@@ -662,6 +662,12 @@ img {
     align-items: center;
     justify-content: center;
 }
+.span-class-it{
+    width: 16px;
+    display: inline-flex;
+}
+
+
 /* 2. Ширина span */
 .checkbox-box {
     width: 16px;
