@@ -645,12 +645,10 @@ img {
 /* 1. Відступ між div і наступним елементом */
 
 /* Общий стиль для всех .input-group */
-.input-group {
-    margin-bottom: 8px;
-}
+
 
 /* Специфический стиль для .div-class */
-.div-class {
+.input-group.div-class {
     margin-bottom: 16px;
 }
 
