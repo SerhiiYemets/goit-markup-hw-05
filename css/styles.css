@@ -820,11 +820,17 @@ body {
     --checkbox-icon-color: #f4f4fd;
 }
 
-/* Checkbox */
+:root {
+    --checkbox-bg-color: #404bbf;
+    --checkbox-icon-color: #f4f4fd;
+}
+
+/* Wrapper */
 .checkbox-wrapper {
     margin-bottom: 24px;
 }
 
+/* Label */
 .custom-checkbox {
     display: inline-flex;
     align-items: center;
@@ -837,6 +843,7 @@ body {
     cursor: pointer;
 }
 
+/* Span box */
 .checkbox-box {
     width: 16px;
     height: 16px;
@@ -845,38 +852,43 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
+    /* важливо — щоб fill працював на span */
 }
 
+/* SVG всередині span */
 .checkbox-icon {
     fill: transparent;
+    width: 10px;
+    height: 8px;
 }
 
-/* ✅ Коли input:checked */
+/* ✅ Стани при checked */
 input[type="checkbox"]:checked+.custom-checkbox .checkbox-box {
     background-color: var(--checkbox-bg-color);
-    /* ✅ ТЗ: через змінну */
+    /* ✅ з var */
     border: none;
-    /* ✅ ТЗ: прибрати стандартну рамку */
+    /* ✅ вимикає border */
     fill: var(--checkbox-icon-color);
-    /* ✅ ТЗ: через змінну */
+    /* ✅ fill для span */
 }
 
-/* ✅ Іконка також змінює колір */
-input[type="checkbox"]:checked+.custom-checkbox .checkbox-icon {
+/* Для надійності fill також дублюємо на svg */
+input[type="checkbox"]:checked+.custom-checkbox .checkbox-box .checkbox-icon {
     fill: var(--checkbox-icon-color);
-    /* ✅ ТЗ: через змінну */
 }
 
-/* Посилання */
+/* Посилання у label */
 .checkbox-link {
     color: #4d5ae5;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    margin-left: 4px; }
+    margin-left: 4px;
+}
 
 /* Button */
 .form-button {
