@@ -651,7 +651,7 @@ img {
 
 /* Специфический стиль для .div-class */
 .div-class {
-    margin-bottom: 16px !important;
+    margin-bottom: 16px;
 }
 
 
