@@ -861,11 +861,11 @@ body {
 
 /* Span box */
 .checkbox-box {
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     transition:
@@ -910,6 +910,7 @@ input[type="checkbox"]:checked+.custom-checkbox .checkbox-box .checkbox-icon {
 
 /* Button */
 .form-button {
+    display: block;
     min-width: 169px;
     height: 56px;
     font-family: 'Roboto', sans-serif;
