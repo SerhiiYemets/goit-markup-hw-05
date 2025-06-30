@@ -881,6 +881,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+.custom-checkbox .checkbox-box {
+    width: 20px;
+}
 
 /* ✅ Стани при checked */
 input[type="checkbox"]:checked+.custom-checkbox .checkbox-box {
