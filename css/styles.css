@@ -643,8 +643,9 @@ img {
 
 /* 1. Відступ між div і наступним елементом */
 /* 1. Відступ між div і наступним елементом */
-.div-class {
-    margin-bottom: 16px;
+.div-class .input-group {
+    margin-bottom: 8px 16px;
+    width: 100%
 }
 
 
@@ -781,9 +782,7 @@ body {
 
 /* Form layout */
 
-.input-group {
-    width: 100%
-}
+
 /* Labels */
 .input-label {
     font-size: 12px;
