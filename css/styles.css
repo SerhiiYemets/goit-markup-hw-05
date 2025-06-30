@@ -775,7 +775,7 @@ body {
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 4px;
 }
 
 /* Input wrapper */
@@ -881,6 +881,7 @@ body {
     fill: transparent;
     width: 10px;
     height: 8px;
+    margin-bottom: 16px;
 }
 
 /* ✅ Стани при checked */
@@ -904,6 +905,7 @@ input[type="checkbox"]:checked+.custom-checkbox .checkbox-box .checkbox-icon {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     margin-left: 4px;
+ 
 }
 
 /* Button */
