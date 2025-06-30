@@ -643,9 +643,16 @@ img {
 
 /* 1. Відступ між div і наступним елементом */
 /* 1. Відступ між div і наступним елементом */
-.div-class .input-group {
-    margin-bottom: 8px 16px;
-    width: 100%
+
+/* Общий стиль для всех .input-group */
+.input-group {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+/* Специфический стиль для .div-class */
+.div-class {
+    margin-bottom: 16px;
 }
 
 
@@ -781,7 +788,6 @@ body {
 }
 
 /* Form layout */
-
 
 /* Labels */
 .input-label {
