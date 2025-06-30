@@ -815,6 +815,11 @@ body {
     border-color: #4d5ae5;
 }
 
+:root {
+    --checkbox-bg-color: #404bbf;
+    --checkbox-icon-color: #f4f4fd;
+}
+
 /* Checkbox */
 .checkbox-wrapper {
     margin-bottom: 24px;
@@ -850,22 +855,28 @@ body {
     fill: transparent;
 }
 
+/* ✅ Коли input:checked */
 input[type="checkbox"]:checked+.custom-checkbox .checkbox-box {
-    background-color: #404bbf;
+    background-color: var(--checkbox-bg-color);
+    /* ✅ ТЗ: через змінну */
     border: none;
-    fill: #f4f4fd;
+    /* ✅ ТЗ: прибрати стандартну рамку */
+    fill: var(--checkbox-icon-color);
+    /* ✅ ТЗ: через змінну */
 }
 
+/* ✅ Іконка також змінює колір */
 input[type="checkbox"]:checked+.custom-checkbox .checkbox-icon {
-    fill: #f4f4fd;
+    fill: var(--checkbox-icon-color);
+    /* ✅ ТЗ: через змінну */
 }
 
+/* Посилання */
 .checkbox-link {
     color: #4d5ae5;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    margin-left: 4px;
-}
+    margin-left: 4px; }
 
 /* Button */
 .form-button {
