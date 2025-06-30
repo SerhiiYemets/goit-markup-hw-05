@@ -859,7 +859,7 @@ body {
 }
 
 /* Span box */
-.checkbox-box.span-class {
+.checkbox-box{
     display: inline-flex;
     width: 16px;
     height: 16px;
