@@ -647,11 +647,10 @@ img {
 /* Общий стиль для всех .input-group */
 .input-group {
     margin-bottom: 8px;
-    width: 100%;
 }
 
 /* Специфический стиль для .div-class */
-.div-class {
+.input-group.div-class {
     margin-bottom: 16px;
 }
 
