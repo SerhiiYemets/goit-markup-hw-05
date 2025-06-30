@@ -820,11 +820,6 @@ body {
     --checkbox-icon-color: #f4f4fd;
 }
 
-:root {
-    --checkbox-bg-color: #404bbf;
-    --checkbox-icon-color: #f4f4fd;
-}
-
 /* Wrapper */
 .checkbox-wrapper {
     margin-bottom: 24px;
@@ -1005,6 +1000,7 @@ input[type="checkbox"]:checked+.custom-checkbox .checkbox-box .checkbox-icon {
 }
 
 .modal-input {
+    margin-bottom: 4px;
     width: 100%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
