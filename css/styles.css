@@ -647,6 +647,14 @@ img {
     margin-bottom: 16px;
 }
 
+
+/* 2. Ширина span */
+.span-class {
+    width: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 /* 2. Ширина span */
 .checkbox-box {
     width: 16px;
