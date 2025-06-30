@@ -782,7 +782,6 @@ body {
 /* Form layout */
 
 .input-group {
-    margin-bottom: 8px;
     width: 100%
 }
 /* Labels */
@@ -1055,6 +1054,7 @@ input[type="checkbox"]:checked+.custom-checkbox .checkbox-box .checkbox-icon {
 .modal-input:focus {
     border-color: #4d5ae5;
 }
+
 
 .input-icon {
     position: absolute;
