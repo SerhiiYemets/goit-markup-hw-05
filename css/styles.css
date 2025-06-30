@@ -670,8 +670,6 @@ img {
 
 /* 2. Ширина span */
 .checkbox-box {
-    width: 16px;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(46, 47, 66, 0.4);
