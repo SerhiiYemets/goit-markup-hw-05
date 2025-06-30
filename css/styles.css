@@ -638,6 +638,32 @@ img {
 
 
 /* Reset */
+
+/* === Вимоги ТЗ === */
+
+/* 1. Відступ між div і наступним елементом */
+.div-class {
+    margin-bottom: 16px;
+}
+
+/* 2. Ширина span */
+.span-class {
+    width: 16px;
+    display: inline-flex;
+}
+
+/* 3. Стан checked у input */
+input:checked+.span-class {
+    background-color: var(--active-bg-color);
+    border: none;
+    fill: var(--active-icon-color);
+}
+
+/* Змінні */
+:root {
+    --active-bg-color: #404bbf;
+    --active-icon-color: #F4F4FD;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -1038,28 +1064,3 @@ input[type="checkbox"]:checked+.custom-checkbox .checkbox-box .checkbox-icon {
     border-color: #4d5ae5;
 }
 
-/* === Вимоги ТЗ === */
-
-/* 1. Відступ між div і наступним елементом */
-.div-class {
-    margin-bottom: 16px;
-}
-
-/* 2. Ширина span */
-.span-class {
-    width: 16px;
-    display: inline-flex;
-}
-
-/* 3. Стан checked у input */
-input:checked+.span-class {
-    background-color: var(--active-bg-color);
-    border: none;
-    fill: var(--active-icon-color);
-}
-
-/* Змінні */
-:root {
-    --active-bg-color: #404bbf;
-    --active-icon-color: #F4F4FD;
-}
