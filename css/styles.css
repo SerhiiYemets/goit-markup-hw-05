@@ -650,8 +650,8 @@ img {
 }
 
 /* Специфический стиль для .div-class */
-.input-group.div-class {
-    margin-bottom: 16px;
+.div-class {
+    margin-bottom: 16px !important;
 }
 
 
