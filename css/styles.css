@@ -859,7 +859,8 @@ body {
 }
 
 /* Span box */
-.checkbox-box {
+.checkbox-box.span-class {
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -874,13 +875,6 @@ body {
     /* важливо — щоб fill працював на span */
 }
 
-/* 2. Ширина span */
-.span-class {
-    width: 16px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
 /* SVG всередині span */
 .checkbox-icon {
     fill: transparent;
