@@ -880,14 +880,13 @@ body {
     fill: transparent;
 }
 
-input[type="checkbox"]:checked+.custom-checkbox .checkbox-box {
+input[type="checkbox"]:checked~.custom-checkbox .checkbox-box {
     background-color: var(--checkbox-bg-color);
     border: none;
     fill: var(--checkbox-icon-color);
-
 }
 
-input[type="checkbox"]:checked+.custom-checkbox .checkbox-box .checkbox-icon {
+input[type="checkbox"]:checked~.custom-checkbox .checkbox-box .checkbox-icon {
     fill: var(--checkbox-icon-color);
 }
 
