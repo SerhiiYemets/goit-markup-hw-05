@@ -844,6 +844,11 @@ body {
 }
 
 /* Span box */
+
+.span-class{
+    display: inline-flex;
+    width: 16px;
+}
 .logo-span {
     display: inline-flex;
     width: 16px;
