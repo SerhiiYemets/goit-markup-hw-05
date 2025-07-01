@@ -844,60 +844,51 @@ body {
 }
 
 /* Span box */
-.icon-span {
+.custom-checkbox {
     display: inline-flex;
-    width: 16px;
-    height: 16px;
     align-items: center;
-    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #2e2f42;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
-.span-class.checkbox-icon {
-    display: inline-flex;
-    width: 16px;
+.custom-checkbox input[type="checkbox"] {
+    display: none;
 }
-.logo-span {
-    display: inline-flex;
+
+.checkbox-box {
     width: 16px;
     height: 16px;
-    color: #2e2f42;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-.checkbox-box {
-    display: inline-flex;
-    width: 16px;
-    height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    align-items: center;
-    justify-content: center;
-    transition:
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
+    transition: background-color 250ms ease, fill 250ms ease;
 }
 
-input[type="checkbox"]:checked~.custom-checkbox .checkbox-box {
+.checkbox-icon {
+    width: 10px;
+    height: 8px;
+    fill: transparent;
+    pointer-events: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkbox-box {
     background-color: var(--checkbox-bg-color);
     border: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkbox-box .checkbox-icon {
     fill: var(--checkbox-icon-color);
 }
 
-input[type="checkbox"]:checked~.custom-checkbox .checkbox-box .checkbox-icon {
-    fill: var(--checkbox-icon-color);
-}
-
-/* Посилання у label */
 .checkbox-link {
     color: #4d5ae5;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    margin-left: 4px;
- 
-}
+    text-decoration: underline; }
 
 /* Button */
 .form-button {
