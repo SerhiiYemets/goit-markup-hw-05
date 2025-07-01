@@ -636,33 +636,20 @@ img {
 }
 
 
-
-/* Reset */
-
-/* === Вимоги ТЗ === */
-
-/* 1. Відступ між div і наступним елементом */
-/* 1. Відступ між div і наступним елементом */
-
-/* Общий стиль для всех .input-group */
 .input-group {
     margin-bottom: 8px;
 }
 
-/* Специфический стиль для .div-class */
 .div-class-it {
     margin-bottom: 16px;
 }
 
-
-/* 3. Стан checked у input */
 input[type="checkbox"]:checked+.custom-checkbox .checkbox-box {
     background-color: var(--active-bg-color);
     border: none;
     fill: var(--active-icon-color);
 }
 
-/* Змінні */
 :root {
     --active-bg-color: #404bbf;
     --active-icon-color: #F4F4FD;
@@ -765,8 +752,6 @@ body {
     margin-bottom: 16px;
 }
 
-/* Form layout */
-
 /* Labels */
 .input-label {
     font-size: 12px;
@@ -859,6 +844,15 @@ body {
 }
 
 /* Span box */
+.logo-span {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    color: #2e2f42;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 .checkbox-box {
     display: inline-flex;
     width: 16px;
