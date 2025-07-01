@@ -852,7 +852,7 @@ body {
     justify-content: center;
 }
 
-.span-class{
+.span-class.checkbox-icon {
     display: inline-flex;
     width: 16px;
 }
