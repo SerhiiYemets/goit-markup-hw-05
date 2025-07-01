@@ -875,6 +875,12 @@ body {
     /* важливо — щоб fill працював на span */
 }
 
+.icon {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+}
+
 .custom-checkbox .checkbox-box {
     width: 20px;
 }
